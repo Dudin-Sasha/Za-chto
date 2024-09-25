@@ -1,0 +1,252 @@
+<pre><font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git push origin master
+fatal: &apos;origin&apos; does not appear to be a git repository
+fatal: Не удалось прочитать из внешнего репозитория.
+
+Удостоверьтесь, что у вас есть необходимые права доступа
+и репозиторий существует.
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git revert --help
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ touch primer.docx
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git log
+<font color="#A2734C">commit f8af4907db713da42a298ea9e196c28b13c11bdc (</font><font color="#2AA1B3"><b>HEAD -&gt; </b></font><font color="#26A269"><b>master</b></font><font color="#A2734C">)</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 10:47:42 2024 +0300
+
+    not-added
+
+<font color="#A2734C">commit ededc84436d5034643b1edeaf46b5c8a30e7c4d4</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 10:37:17 2024 +0300
+
+    чтож
+
+<font color="#A2734C">commit 337d108fd629c0b13568e9aab938c8ce89fa393a</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 10:27:38 2024 +0300
+
+    почему
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ ^C
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git revert --no-edit ededc84436d5034643b1edeaf46b5c8a30e7c4d4 
+error: Ваши локальные изменения в указанных файлах будут перезаписаны при слиянии:
+	text.txt
+Сделайте коммит или спрячьте ваши изменения перед слиянием веток.
+Прерываю
+fatal: сбой обращения изменений коммита
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git log
+<font color="#A2734C">commit f8af4907db713da42a298ea9e196c28b13c11bdc (</font><font color="#2AA1B3"><b>HEAD -&gt; </b></font><font color="#26A269"><b>master</b></font><font color="#A2734C">)</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 10:47:42 2024 +0300
+
+    not-added
+
+<font color="#A2734C">commit ededc84436d5034643b1edeaf46b5c8a30e7c4d4</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 10:37:17 2024 +0300
+
+    чтож
+
+<font color="#A2734C">commit 337d108fd629c0b13568e9aab938c8ce89fa393a</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 10:27:38 2024 +0300
+
+    почему
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git add .
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git commit -m &quot;history&quot;
+[master 4f06225] history
+ 2 files changed, 174 insertions(+), 2 deletions(-)
+ create mode 100644 primer.docx
+ rewrite text.txt (100%)
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git log
+<font color="#A2734C">commit 4f06225d80bf9c989909cd70a86f8af56bb66aa0 (</font><font color="#2AA1B3"><b>HEAD -&gt; </b></font><font color="#26A269"><b>master</b></font><font color="#A2734C">)</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 11:14:45 2024 +0300
+
+    history
+
+<font color="#A2734C">commit f8af4907db713da42a298ea9e196c28b13c11bdc</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 10:47:42 2024 +0300
+
+    not-added
+
+<font color="#A2734C">commit ededc84436d5034643b1edeaf46b5c8a30e7c4d4</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 10:37:17 2024 +0300
+
+    чтож
+
+<font color="#A2734C">commit 337d108fd629c0b13568e9aab938c8ce89fa393a</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 10:27:38 2024 +0300
+
+    почему
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git revert --no-edit 4f06225d80bf9c989909cd70a86f8af56bb66aa0
+[master 4a55a68] Revert &quot;history&quot;
+ Date: Wed Sep 25 11:15:44 2024 +0300
+ 2 files changed, 2 insertions(+), 174 deletions(-)
+ delete mode 100644 primer.docx
+ rewrite text.txt (100%)
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git log
+<font color="#A2734C">commit 4a55a686b313e8384630113577747ee26f81a168 (</font><font color="#2AA1B3"><b>HEAD -&gt; </b></font><font color="#26A269"><b>master</b></font><font color="#A2734C">)</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 11:15:44 2024 +0300
+
+    Revert &quot;history&quot;
+    
+    This reverts commit 4f06225d80bf9c989909cd70a86f8af56bb66aa0.
+
+<font color="#A2734C">commit 4f06225d80bf9c989909cd70a86f8af56bb66aa0</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 11:14:45 2024 +0300
+
+    history
+
+<font color="#A2734C">commit f8af4907db713da42a298ea9e196c28b13c11bdc</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 10:47:42 2024 +0300
+
+    not-added
+
+<font color="#A2734C">commit ededc84436d5034643b1edeaf46b5c8a30e7c4d4</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 10:37:17 2024 +0300
+
+    чтож
+
+<font color="#A2734C">commit 337d108fd629c0b13568e9aab938c8ce89fa393a</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 10:27:38 2024 +0300
+
+    почему
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git revert --no-edit 337d108fd629c0b13568e9aab938c8ce89fa393a...HEAD
+[master 9b7c493] Revert &quot;Revert &quot;history&quot;&quot;
+ Date: Wed Sep 25 11:19:53 2024 +0300
+ 2 files changed, 174 insertions(+), 2 deletions(-)
+ create mode 100644 primer.docx
+ rewrite text.txt (100%)
+[master f38e3f6] Revert &quot;history&quot;
+ Date: Wed Sep 25 11:19:53 2024 +0300
+ 2 files changed, 2 insertions(+), 174 deletions(-)
+ delete mode 100644 primer.docx
+ rewrite text.txt (100%)
+[master 36fc48f] Revert &quot;not-added&quot;
+ Date: Wed Sep 25 11:19:53 2024 +0300
+ 2 files changed, 1 deletion(-)
+ delete mode 100644 style.css
+[master f9ea981] Revert &quot;чтож&quot;
+ Date: Wed Sep 25 11:19:53 2024 +0300
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git log
+<font color="#A2734C">commit f9ea981b95bf87168c08e0b7ac2e2e3321a8f462 (</font><font color="#2AA1B3"><b>HEAD -&gt; </b></font><font color="#26A269"><b>master</b></font><font color="#A2734C">)</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 11:19:53 2024 +0300
+
+    Revert &quot;чтож&quot;
+    
+    This reverts commit ededc84436d5034643b1edeaf46b5c8a30e7c4d4.
+
+<font color="#A2734C">commit 36fc48f49c17415b7133e312e1e7f7f65304ae65</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 11:19:53 2024 +0300
+
+    Revert &quot;not-added&quot;
+    
+    This reverts commit f8af4907db713da42a298ea9e196c28b13c11bdc.
+
+<font color="#A2734C">commit f38e3f6f4c2b8e69cb7152a03596b59c14fef65e</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 11:19:53 2024 +0300
+
+    Revert &quot;history&quot;
+    
+    This reverts commit 4f06225d80bf9c989909cd70a86f8af56bb66aa0.
+
+<font color="#A2734C">commit 9b7c4935873dac5739ad3b17b21eca80ca583d3f</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 11:19:53 2024 +0300
+
+    Revert &quot;Revert &quot;history&quot;&quot;
+    
+    This reverts commit 4a55a686b313e8384630113577747ee26f81a168.
+
+<font color="#A2734C">commit 4a55a686b313e8384630113577747ee26f81a168</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 11:15:44 2024 +0300
+
+    Revert &quot;history&quot;
+    
+    This reverts commit 4f06225d80bf9c989909cd70a86f8af56bb66aa0.
+
+<font color="#A2734C">commit 4f06225d80bf9c989909cd70a86f8af56bb66aa0</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 11:14:45 2024 +0300
+
+    history
+
+<font color="#A2734C">commit f8af4907db713da42a298ea9e196c28b13c11bdc</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 10:47:42 2024 +0300
+
+    not-added
+
+<font color="#A2734C">commit ededc84436d5034643b1edeaf46b5c8a30e7c4d4</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 10:37:17 2024 +0300
+
+    чтож
+
+<font color="#A2734C">commit 337d108fd629c0b13568e9aab938c8ce89fa393a</font>
+Author: Dudin-Sasha &lt;sasha_dudin_2007@mail.ru&gt;
+Date:   Wed Sep 25 10:27:38 2024 +0300
+
+    почему
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git remoute add origin https://clck.ru/3DVhQU
+git: «remoute» не является командой git. Смотрите «git --help».
+
+Самые похожие команды:
+	remote
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git remoute add origin https://clck.ru/3DVhQU master
+git: «remoute» не является командой git. Смотрите «git --help».
+
+Самые похожие команды:
+	remote
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git remote add origin https://clck.ru/3DVhQU master
+использование: git remote add [&lt;опции&gt;] &lt;имя&gt; &lt;url&gt;
+
+    -f, --fetch           извлечь внешние ветки
+    --tags                импортировать все метки и ассоциированные объекты при извлечении
+                          или не извлекать метки вообще (--no-tags)
+    -t, --track &lt;ветка&gt;   отслеживаемые ветки
+    -m, --master &lt;ветка&gt;  мастер ветка
+    --mirror[=(push|fetch)]
+                          настроить внешний репозиторий как зеркало для отправки или извлечения изменений
+
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git push origin master
+fatal: &apos;origin&apos; does not appear to be a git repository
+fatal: Не удалось прочитать из внешнего репозитория.
+
+Удостоверьтесь, что у вас есть необходимые права доступа
+и репозиторий существует.
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git remote add origin https://clck.ru/3DVhQU
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git push origin master
+fatal: не удалось обновить базовый url из переадресации:
+  запрошено: https://clck.ru/3DVhQU/info/refs?service=git-receive-pack
+   переадресовано: https://www.gilera.com/gb_EN/
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git remote add origin https://github.com/Dudin-Sasha/Za-chto
+error: внешний репозиторий origin уже существует
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git remote add original https://github.com/Dudin-Sasha/Za-chto
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git push add original master
+error: src refspec original ничему не соответствует
+<font color="#C01C28">error: не удалось отправить некоторые ссылки в «add»</font>
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ git push original master
+Перечисление объектов: 18, готово.
+Подсчет объектов: 100% (18/18), готово.
+При сжатии изменений используется до 4 потоков
+Сжатие объектов: 100% (16/16), готово.
+Запись объектов: 100% (18/18), 4.49 КиБ | 4.49 МиБ/с, готово.
+Всего 18 (изменений 7), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+remote: Resolving deltas: 100% (7/7), done.
+To https://github.com/Dudin-Sasha/Za-chto
+ * [new branch]      master -&gt; master
+<font color="#26A269"><b>user@user-System-Product-Name</b></font>:<font color="#12488B"><b>~/Рабочий стол/дудин</b></font>$ 
+
+</pre>
